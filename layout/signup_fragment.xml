@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/Phone_num"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="5dp"
+        android:hint="Mobile number"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
+
+        android:layout_marginTop="60dp"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff69b4"
+        android:text="SIGN UP"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="337dp"
+        android:layout_height="46dp"
+
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/nick_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".8"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.782"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/nick_name"
+        android:layout_width="340dp"
+        android:layout_height="41dp"
+
+        android:hint="Nickname"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintWidth_percent=".8" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:foregroundTint="#E91E63"
+        android:indeterminateTint="#E91E63"
+        android:progressBackgroundTint="#E91E63"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nick_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
